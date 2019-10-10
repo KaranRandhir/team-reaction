@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, Button } from 'react-native';
 import * as Speech from 'expo-speech';
+import {MaterialIcons} from "@expo/vector-icons" ;
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export default class Voice extends React.Component {
 
@@ -14,7 +16,9 @@ export default class Voice extends React.Component {
   render() {
     return (
       <View >
-        <Button title="Voice" onPress={this.speak} />
+        <TouchableOpacity onPress={this.speak} >
+        <MaterialIcons name="record-voice-over" style={styles.iconstyle}/>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -27,6 +31,10 @@ const styles = StyleSheet.create({
     padding : 10,
     backgroundColor: '#ecf0f1',
     padding: 8,
+  },
+  iconstyle : {
+    fontSize : 35,
+    color : "white"
   }
  
 });
