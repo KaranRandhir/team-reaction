@@ -20,8 +20,8 @@ const Location1 = ({navigation}) => {
     <ScrollView showsHorizontalScrollIndicator = {false}
     
     showsVerticalScrollIndicator = {false}>
-      <Image source = {require("../../assets/photos/redFort.jpg")}
-      style = {{height : 400, width :400, marginTop:50,alignSelf : "center"}}/>
+      <Image source = {require("../../assets/photos/Location1.jpg")}
+      style = {{height : 850, width :400, marginTop:50,alignSelf : "center"}}/>
  
         </ScrollView>
 
