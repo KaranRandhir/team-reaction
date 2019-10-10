@@ -3,6 +3,7 @@ import { Text, StyleSheet,View,Button,TextInput,Image ,ScrollView} from 'react-n
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Audio, Video } from 'expo-av';
 import {AntDesign} from "@expo/vector-icons"
+import Voice from "./../Voice"
 
 
 const English = ({navigation}) => { 
@@ -15,7 +16,9 @@ const English = ({navigation}) => {
   <View style = {styles.mainview}>
       <View style={styles.heading}>
       <Text style={{fontSize : 40,color:"white",marginTop:20}}>Red Fort</Text>
-      <AntDesign name="sound" style={styles.iconstyle}/>
+      <View style={styles.iconstyle}>
+      <Voice/>
+      </View>
       </View>
     <ScrollView showsHorizontalScrollIndicator = {false}
     
