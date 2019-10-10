@@ -2,7 +2,7 @@ import React from "react" ;
 import { Text, StyleSheet,View,Button,TextInput,Image ,ScrollView} from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Audio, Video } from 'expo-av';
-import {AntDesign} from "@expo/vector-icons"
+import {MaterialIcons} from "@expo/vector-icons"
 import Voice from "./../Voice"
 
 
@@ -11,11 +11,12 @@ const English = ({navigation}) => {
 
   
   return (
+    
   
 
   <View style = {styles.mainview}>
       <View style={styles.heading}>
-      <Text style={{fontSize : 40,color:"white",marginTop:20}}>Red Fort</Text>
+      <Text style={{fontSize : 40,color:"white",marginTop:50}}>Red Fort</Text>
       <View style={styles.iconstyle}>
       <Voice/>
       </View>
@@ -78,7 +79,7 @@ const styles = StyleSheet.create({
     marginLeft : 200,
     fontSize : 40,
     color : "white",
-    marginTop : 30,
+    marginTop : 60,
 
   },
   heading :{

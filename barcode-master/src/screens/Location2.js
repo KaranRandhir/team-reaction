@@ -5,7 +5,7 @@ import { Audio, Video } from 'expo-av';
 import {AntDesign} from "@expo/vector-icons"
 
 
-const Location1 = ({navigation}) => { 
+const Location2 = ({navigation}) => { 
   
 
   
@@ -20,14 +20,14 @@ const Location1 = ({navigation}) => {
     <ScrollView showsHorizontalScrollIndicator = {false}
     
     showsVerticalScrollIndicator = {false}>
-      <Image source = {require("../../assets/photos/Location1.jpg")}
+      <Image source = {require("../../assets/photos/Location2.jpg")}
       style = {{height : 650, width :400, marginTop:25,alignSelf : "center"}}/>
  
         </ScrollView>
 
         <TouchableOpacity 
         style = {{backgroundColor : 'rgba(0,0,0,0.3)' , marginTop : 20 , width : 90 , alignSelf : 'center',  padding : 10  }}
-        onPress = {()=> navigation.navigate("Info2")}>
+        onPress = {()=> navigation.navigate("Info3")}>
           <Text style={{ color:"white",fontSize:20,textAlign:"center"}}>Next</Text> 
           </TouchableOpacity>
 
@@ -74,4 +74,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Location1;
+export default Location2;

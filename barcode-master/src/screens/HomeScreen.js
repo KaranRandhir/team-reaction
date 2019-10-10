@@ -11,7 +11,7 @@ const HomeScreen = ({navigation}) => {
   
   <View style = {styles.mainview}>
        <View style={styles.heading}>
-       <Text style = {{fontSize : 60, color : "white", marginTop : 60 ,marginBottom :40,
+       <Text style = {{fontSize : 60, color : "white", marginTop : 100 ,marginBottom :40,
        
       }}>Xplore</Text>
        </View>

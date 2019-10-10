@@ -44,7 +44,10 @@ export default class BarcodeScannerExample extends React.Component {
 
         {scanned && (
           <Button title={'Start Exploring !'}
-            onPress={() => this.props.navigation.navigate('English')} /> 
+            onPress={() => {this.props.navigation.navigate('English') ; this.setState({ scanned: false });
+          }
+          }
+             /> 
         )}
 
     

@@ -10,11 +10,11 @@ const Login = ({navigation}) => {
   
   <View style = {styles.mainview}>
       
-      <Text style={{fontSize : 30,color:"white",marginTop:20}}>Select language</Text>
+      <Text style={{fontSize : 30,color:"white",marginTop:100}}>Select language</Text>
      
       
       <TouchableOpacity
-      onPress = {()=> navigation.navigate("English")}><Text style={{fontSize : 30,color:"white",marginTop:80}}>English</Text></TouchableOpacity>
+      onPress = {()=> navigation.navigate("English")}><Text style={{fontSize : 30,color:"white",marginTop:120}}>English</Text></TouchableOpacity>
       
       <TouchableOpacity
       onPress = {()=> navigation.navigate("Barcode")}><Text style={{fontSize : 30,color:"white",marginTop : 20}}>中文</Text></TouchableOpacity>
