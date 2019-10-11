@@ -8,9 +8,11 @@ import English1 from "./src/screens/English1" ;
 import Location1 from "./src/screens/Location1";
 import Info1 from "./src/screens/Info1";
 import Location2 from "./src/screens/Location2";
-import Info2 from "./src/screens/Info2";
+import Info2a from "./src/screens/Info2a";
 import Location3 from "./src/screens/Location3";
-import Info3 from "./src/screens/Info3";
+import Info3a from "./src/screens/Info3a";
+import Info4 from './src/screens/Info4';
+import Intro from './src/screens/Intro';
 
 const navigator = createStackNavigator(
   {
@@ -23,9 +25,12 @@ const navigator = createStackNavigator(
     Location1 : Location1,
      Info1 : Info1,
     Location2 : Location2,
-  Info2 : Info2,
+  Info2a : Info2a,
   Location3 : Location3,
-  Info3 : Info3
+  Info3a : Info3a,
+  Info4 : Info4,
+  Intro : Intro,
+  
    },
   {
     defaultNavigationOptions: {

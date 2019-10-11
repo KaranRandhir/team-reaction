@@ -9,7 +9,6 @@ import Voice from "./../Voice"
 const English = ({navigation}) => { 
   
 
-  
   return (
     
   
@@ -29,7 +28,8 @@ const English = ({navigation}) => {
     
       <Text style = {{fontSize : 20 ,color: "white",textAlign :"center",paddingTop : 20,paddingHorizontal:20}}>Red Fort, also called Lal Qalʿah, also spelled Lal Kila or Lal Qila, Mughal fort in Old Delhi, India. 
           It was built by Shah Jahān in the mid-17th century and remains a major tourist attraction. 
-          The fort was designated a UNESCO World Heritage site in 2007.</Text>
+          The fort was designated a UNESCO World Heritage site in 2007.
+          </Text>
 
      <Text style = {{fontSize : 20 ,color: "white",textAlign : "center",paddingHorizontal:20}}>The fort’s massive red sandstone walls, which stand 75 feet (23 metres) high, enclose a complex of palaces and entertainment halls, 
         projecting balconies, baths and indoor canals, and geometrical gardens, as well as an ornate mosque. 

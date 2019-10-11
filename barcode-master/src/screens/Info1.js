@@ -2,7 +2,8 @@ import React from "react" ;
 import { Text, StyleSheet,View,Button,TextInput,Image ,ScrollView} from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Audio, Video } from 'expo-av';
-import {AntDesign} from "@expo/vector-icons"
+import {AntDesign} from "@expo/vector-icons" ;
+import Voice from "./../Voice"
 
 
 const Info1 = ({navigation}) => { 
@@ -11,13 +12,15 @@ const Info1 = ({navigation}) => {
   
   <View style = {styles.mainview}>
       <View style={styles.heading}>
-      <Text style={{fontSize : 40,color:"white",marginTop:20}}>Lahori Gate</Text>
-      <AntDesign name="sound" style={styles.iconstyle}/>
+      <Text style={{fontSize : 40,color:"white",marginTop:50}}>Lahori Gate</Text>
+      <View style={styles.iconstyle}>
+      <Voice/>
+      </View>
       </View>
     <ScrollView showsHorizontalScrollIndicator = {false}
     showsVerticalScrollIndicator = {false}>
       <Image source = {require("../../assets/photos/lahori.jpg")}
-      style = {{height : 400, width :400, marginTop:50,alignSelf : "center"}}/>
+      style = {{height : 400, width :400, marginTop:70,alignSelf : "center"}}/>
     
       <Text style = {{fontSize : 20 ,color: "white",textAlign :"center",paddingTop : 20,paddingHorizontal:20}}>
       The Lahori Gate is the main entrance to the Red Fort in Delhi. The fort is approached through a covered street flanked by arcaded apartments called the Chhatta Chowk.
@@ -69,7 +72,7 @@ const styles = StyleSheet.create({
     marginLeft : 230,
     fontSize : 40,
     color : "white",
-    marginTop : 30,
+    marginTop : 70,
 
   },
   heading :{

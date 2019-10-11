@@ -37,6 +37,12 @@ export default class BarcodeScannerExample extends React.Component {
           flexDirection: 'column',
           justifyContent: 'flex-end',
         }}>
+        <Text style={{
+          fontSize : 30,
+          alignSelf : "center"
+        }}> Scan QR Code 
+         </Text>
+
         <BarCodeScanner
           onBarCodeScanned={scanned ? undefined : this.handleBarCodeScanned}
           style={StyleSheet.absoluteFillObject}
@@ -44,7 +50,7 @@ export default class BarcodeScannerExample extends React.Component {
 
         {scanned && (
           <Button title={'Start Exploring !'}
-            onPress={() => {this.props.navigation.navigate('English') ; this.setState({ scanned: false });
+            onPress={() => {this.props.navigation.navigate('Intro') ;
           }
           }
              /> 

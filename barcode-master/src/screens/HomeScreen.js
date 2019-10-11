@@ -1,6 +1,8 @@
 import React,{useState} from 'react';
 import { Text, StyleSheet,View,Button,TextInput } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import { LinearGradient } from 'expo-linear-gradient';
+
 
 
 const HomeScreen = ({navigation}) => { 
@@ -10,18 +12,22 @@ const HomeScreen = ({navigation}) => {
   return (
   
   <View style = {styles.mainview}>
+   <LinearGradient
+          colors={['#6a11cb', '#2575fc']}
+           style={{ flex : 1  }}
+          >
        <View style={styles.heading}>
-       <Text style = {{fontSize : 60, color : "white", marginTop : 100 ,marginBottom :40,
+       <Text style = {{fontSize : 60,fontWeight:"bold" ,color : "white", marginTop : 120 ,marginBottom :50,
        
-      }}>Xplore</Text>
+      }}>Xploree</Text>
        </View>
        <View >
-       <TextInput style={{paddingBottom : 10,color : "white",backgroundColor :"rgba(0,0,0,0)",borderBottomColor:"rgba(255,255,255,0.6)", borderBottomWidth: 1 , marginTop : 100 ,marginBottom:10,marginLeft :20,marginRight:20}}
+       <TextInput style={{ fontSize : 20 ,paddingBottom : 10,color : "white",backgroundColor :"rgba(0,0,0,0)",borderBottomColor:"rgba(255,255,255,0.6)", borderBottomWidth: 1 , marginTop : 130 ,marginBottom:10,marginLeft :20,marginRight:20}}
         placeholder = " Username"
         value = {name}
         onChangeText = {newValue => changeName(newValue)}> 
         </TextInput>
-        <TextInput style={{ paddingBottom : 10,color : "white",backgroundColor :"rgba(0,0,0,0)",borderBottomColor:"rgba(255,255,255,0.6)", borderBottomWidth: 1 ,marginTop :10 ,marginBottom:10,marginLeft:20,marginRight:20}}
+        <TextInput secureTextEntry={true} style={{ fontSize : 20, paddingBottom : 10,color : "white",backgroundColor :"rgba(0,0,0,0)",borderBottomColor:"rgba(255,255,255,0.6)", borderBottomWidth: 1 ,marginTop :10 ,marginBottom:10,marginLeft:20,marginRight:20}}
         placeholder = " Password"
         value = {pass}
         onChangeText = {newValue => changePass(newValue)}> 
@@ -39,6 +45,7 @@ const HomeScreen = ({navigation}) => {
           </TouchableOpacity> 
 
       </View> 
+      </LinearGradient>
       
         
   </View>
